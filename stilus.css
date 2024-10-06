@@ -1,0 +1,159 @@
+* 
+{ margin: 0; padding: 0; box-sizing: border-box; }
+
+body 
+{ 
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    color: #333; background-color: #f4f7f6;
+    line-height: 1.6; display: flex; justify-content: center; align-items: center;
+    min-height: 100vh; 
+}
+
+.profile-img
+{
+width: 150px;
+height: 150px;
+border-radius: 50%;
+margin: 20px 0;
+box-shadow: 0 4px 8 px rgba(0, 0, 0, 0.1);
+}
+
+.kontener 
+{
+    max-width: 1100px; margin: 0 auto; padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+}
+
+nav 
+{ 
+    background-color: #007bff;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-bottom: 30px; 
+}
+
+nav ul 
+{ 
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+nav ul li 
+{
+     margin: 5px 15px;
+    
+}
+
+nav ul li a 
+{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em; transition: color 0.3s; 
+}
+
+nav ul li a:hover 
+{
+     color: #f4f7f6;
+}
+
+header 
+{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 
+{    
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+header p 
+{ 
+    font-size: 1.2em; color: #555;
+    margin-bottom: 20px;
+}
+
+.kartyak 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px; 
+}
+
+.kartya 
+{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px; padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    text-align: center; 
+}
+
+.kartya2
+{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px; padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+    flex-basis: 100%;
+}
+
+.kartya:hover
+{ 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.kartya h3 
+{
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.kartya p
+{
+    font-size: 1.1em;
+    color: #666;
+}
+
+.kartya-img
+{
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.kartya-img2
+{
+    width: 300px;
+    height: 150px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer
+{
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    color: #777; 
+    font-size: 0.9em;
+    border-top: 1px solid #ddd;
+}
+
