@@ -147,6 +147,36 @@ header p
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+#backToTopBtn 
+{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backToTopBtn:hover 
+{
+    background-color: #0056b3;
+}
+
+.fade-in 
+{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+
 footer
 {
     text-align: center;
