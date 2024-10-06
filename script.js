@@ -45,3 +45,33 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+
+fetch('https://randomuser.me/api/')
+  .then(response => response.json())
+  .then(data => {
+    const user = data.results[0];
+    console.log(user);
+   
+    console.log(`${user.name.first} ${user.name.last}`);
+  })
+  .catch(error => console.error('Error:', error));
+
+
+fetch('https://randomuser.me/api/')
+.then(response => response.json())
+.then(data => {
+  const user = data.results[0];
+
+ 
+  document.getElementById('username').textContent = `${user.name.first} ${user.name.last} - Energetikai mérnök (gólya)`;
+
+ 
+  const emailElement = document.getElementById('useremail');
+  emailElement.textContent = user.email;
+  emailElement.href = `mailto:${user.email}`;
+
+
+  document.getElementById('userimage').src = user.picture.large;
+})
+.catch(error => console.error('Error:', error));
+
